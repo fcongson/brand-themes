@@ -2,6 +2,232 @@
 
 exports[`Button Renders 1`] = `
 <button>
-  Button
+  Text
 </button>
+`;
+
+exports[`Button Renders airbnb primary 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "button": Object {
+        "primary": Object {
+          "backgroundColor": "#008489",
+          "border": "1px solid #008489",
+          "borderRadius": "8px",
+          "color": "#ffffff",
+          "cursor": "pointer",
+          "fontFamily": "Montserrat",
+          "fontSize": "12px",
+          "fontWeight": 700,
+          "height": "44px",
+          "width": "183px",
+        },
+        "secondary": Object {
+          "backgroundColor": "#ffffff",
+          "border": "1px solid #008489",
+          "borderRadius": "8px",
+          "color": "#008489",
+          "cursor": "pointer",
+          "fontFamily": "Montserrat",
+          "fontSize": "12px",
+          "fontWeight": 700,
+          "height": "44px",
+          "width": "183px",
+        },
+      },
+    }
+  }
+>
+  <Button
+    type="primary"
+  >
+    Text
+  </Button>
+</ContextProvider>
+`;
+
+exports[`Button Renders figma primary 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "button": Object {
+        "primary": Object {
+          "active": "
+      transform: translateY(1px);
+    ",
+          "backgroundColor": "#000000",
+          "border": "3px solid #000000",
+          "borderRadius": "8px",
+          "color": "#ffffff",
+          "cursor": "pointer",
+          "fontFamily": "Lato",
+          "fontSize": "16px",
+          "fontWeight": 700,
+          "height": "42px",
+          "hover": "
+      transform: translateY(-2px);
+    ",
+          "transition": "transform 200ms,background 200ms",
+          "width": "302px",
+        },
+        "secondary": Object {
+          "active": "
+      transform: translateY(1px);
+    ",
+          "backgroundColor": "#ffffff",
+          "border": "3px solid #000000",
+          "borderRadius": "8px",
+          "color": "#000000",
+          "cursor": "pointer",
+          "fontFamily": "Lato",
+          "fontSize": "16px",
+          "fontWeight": 700,
+          "height": "42px",
+          "hover": "
+      transform: translateY(-2px);
+    ",
+          "transition": "transform 200ms,background 200ms",
+          "width": "302px",
+        },
+      },
+    }
+  }
+>
+  <Button
+    type="primary"
+  >
+    Text
+  </Button>
+</ContextProvider>
+`;
+
+exports[`Button Renders primary 1`] = `
+<styled.button>
+  Text
+</styled.button>
+`;
+
+exports[`Button Renders secondary 1`] = `
+<styled.button>
+  Text
+</styled.button>
+`;
+
+exports[`Button Renders spotify primary 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "button": Object {
+        "primary": Object {
+          "active": "
+      transform: scale(1);
+      background-color: #14833b;
+    ",
+          "backgroundColor": "#1db954",
+          "border": "none",
+          "borderRadius": "500px",
+          "color": "#ffffff",
+          "cursor": "pointer",
+          "fontFamily": "Montserrat",
+          "fontSize": "14px",
+          "fontWeight": 700,
+          "height": "48px",
+          "hover": "
+      transform: scale(1.04);
+      background-color: #1ed760;
+    ",
+          "textTransform": "uppercase",
+          "transition": "all 33ms",
+          "width": "214px",
+        },
+        "secondary": Object {
+          "active": "
+      transform: scale(1);
+    ",
+          "backgroundColor": "transparent",
+          "border": "2px solid #000000",
+          "borderRadius": "500px",
+          "color": "#000000",
+          "cursor": "pointer",
+          "fontFamily": "Montserrat",
+          "fontSize": "14px",
+          "fontWeight": 700,
+          "height": "48px",
+          "hover": "
+      transform: scale(1.04);
+    ",
+          "textTransform": "uppercase",
+          "transition": "all 33ms",
+          "width": "214px",
+        },
+      },
+    }
+  }
+>
+  <Button
+    type="primary"
+  >
+    Text
+  </Button>
+</ContextProvider>
+`;
+
+exports[`Button Renders spotify secondary 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "button": Object {
+        "primary": Object {
+          "active": "
+      transform: scale(1);
+      background-color: #14833b;
+    ",
+          "backgroundColor": "#1db954",
+          "border": "none",
+          "borderRadius": "500px",
+          "color": "#ffffff",
+          "cursor": "pointer",
+          "fontFamily": "Montserrat",
+          "fontSize": "14px",
+          "fontWeight": 700,
+          "height": "48px",
+          "hover": "
+      transform: scale(1.04);
+      background-color: #1ed760;
+    ",
+          "textTransform": "uppercase",
+          "transition": "all 33ms",
+          "width": "214px",
+        },
+        "secondary": Object {
+          "active": "
+      transform: scale(1);
+    ",
+          "backgroundColor": "transparent",
+          "border": "2px solid #000000",
+          "borderRadius": "500px",
+          "color": "#000000",
+          "cursor": "pointer",
+          "fontFamily": "Montserrat",
+          "fontSize": "14px",
+          "fontWeight": 700,
+          "height": "48px",
+          "hover": "
+      transform: scale(1.04);
+    ",
+          "textTransform": "uppercase",
+          "transition": "all 33ms",
+          "width": "214px",
+        },
+      },
+    }
+  }
+>
+  <Button
+    type="secondary"
+  >
+    Text
+  </Button>
+</ContextProvider>
 `;
