@@ -1,9 +1,9 @@
 import * as React from 'react'
-import Button from './Button'
 import { ThemeProvider } from 'styled-components'
 import airbnb from '../../themes/airbnb'
 import figma from '../../themes/figma'
 import spotify from '../../themes/spotify'
+import Button from './Button'
 
 export default {
   title: 'Button',

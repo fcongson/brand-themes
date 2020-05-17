@@ -14,18 +14,7 @@ Button Component
 
 ```js
 const PrimaryButton = styled.button`
-  ${({ theme }) => {
-    if (!theme) return
-    const primary = theme?.button?.primary
-    return `
-      background-color: ${primary?.backgroundColor};
-      height: ${primary?.height};
-      width: ${primary?.width};
-      border-radius: ${primary?.borderRadius};
-      border: ${primary?.border};
-      color: ${primary?.color};
-    `
-  }}
+  ${(props) => props?.theme?.button?.primary}
 `
 ```
 
@@ -37,13 +26,25 @@ Brand Theme
 
 ```js
 const button = {
-  primary: {
-    backgroundColor: color.primary,
-    height: '42px',
-    width: '302px',
-    borderRadius: '8px',
-    border: `3px solid ${color.primary}`,
-    color: color.white,
-  },
+  primary: `
+  background-color: ${color.primary};
+  height: 42px;
+  width: 302px;
+  border-radius: 8px;
+  border: 3px solid ${color.primary};
+  color: ${color.white};
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: none;
+  cursor: pointer;
+  &:hover {
+    transform: translateY(-2px);
+  }
+  &:active {
+    transform: translateY(1px);
+  }
+  transition: transform 200ms,background 200ms;
+  `,
 }
 ```

@@ -13,30 +13,30 @@ const color = {
 }
 
 const button = {
-  primary: {
-    backgroundColor: color.primary,
-    height: '44px',
-    width: '183px',
-    borderRadius: '8px',
-    border: `1px solid ${color.primary}`,
-    color: color.white,
-    fontFamily: 'Montserrat',
-    fontSize: '12px',
-    fontWeight: 700,
-    cursor: 'pointer'
-  },
-  secondary: {
-    backgroundColor: color.secondary,
-    height: '44px',
-    width: '183px',
-    borderRadius: '8px',
-    border: `1px solid ${color.primary}`,
-    color: color.primary,
-    fontFamily: 'Montserrat',
-    fontSize: '12px',
-    fontWeight: 700,
-    cursor: 'pointer'
-  },
+  primary: `
+  background-color: ${color.primary};
+  height: 44px;
+  width: 183px;
+  border-radius: 8px;
+  border: 1px solid ${color.primary};
+  color: ${color.white};
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  `,
+  secondary: `
+  background-color: ${color.secondary};
+  height: 44px;
+  width: 183px;
+  border-radius: 8px;
+  border: 1px solid ${color.primary};
+  color: ${color.primary};
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  `,
 }
 
 const theme = {
