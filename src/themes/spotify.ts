@@ -35,6 +35,17 @@ const button = {
       background-color: #14833b;
     `,
     transition: 'all 33ms',
+    override: `
+      &:hover {
+        transform: scale(1.04);
+        background-color: #1ed760;
+      }
+      &:active {
+        transform: scale(1);
+        background-color: #14833b;
+      }
+      transition: all 33ms;
+    `,
   },
   secondary: {
     backgroundColor: color.secondary,
@@ -48,13 +59,15 @@ const button = {
     fontWeight: 700,
     textTransform: 'uppercase',
     cursor: 'pointer',
-    hover: `
-      transform: scale(1.04);
+    override: `
+      &:hover {
+        transform: scale(1.04);
+      }
+      &:active {
+        transform: scale(1);
+      }
+      transition: all 33ms;
     `,
-    active: `
-      transform: scale(1);
-    `,
-    transition: 'all 33ms',
   },
 }
 

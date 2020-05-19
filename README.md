@@ -8,7 +8,7 @@ This project is a proof of concept for building a set of themable reusable React
 
 ## Components
 
-The component uses each property from the theme.
+The component provides sensible defaults that can be overriden based on design tokens while also allowing an `override` property to supply any css to the component.
 
 Button Component
 
@@ -18,12 +18,21 @@ const PrimaryButton = styled.button`
     if (!theme) return
     const primary = theme?.button?.primary
     return `
+      // defaults using tokens
       background-color: ${primary?.backgroundColor};
       height: ${primary?.height};
       width: ${primary?.width};
       border-radius: ${primary?.borderRadius};
       border: ${primary?.border};
       color: ${primary?.color};
+      font-family: ${primary?.fontFamily ?? 'sans-serif'};
+      font-size: ${primary?.fontSize};
+      font-weight: ${primary?.fontWeight};
+      text-transform: ${primary?.textTransform};
+      cursor: ${primary?.cursor};
+
+      // css
+      ${primary?.override}
     `
   }}
 `
@@ -31,7 +40,7 @@ const PrimaryButton = styled.button`
 
 ## Themes
 
-The theme provides each property of the component.
+The theme can provide a value to each token and css to the `override` property.
 
 Brand Theme
 
@@ -44,6 +53,19 @@ const button = {
     borderRadius: '8px',
     border: `3px solid ${color.primary}`,
     color: color.white,
+    fontFamily: 'Lato',
+    fontSize: '16px',
+    fontWeight: 700,
+    cursor: 'pointer',
+    override: `
+      &:hover {
+        transform: translateY(-2px);
+      }
+      &:active {
+        transform: translateY(1px);
+      }
+      transition: transform 200ms,background 200ms;
+    `,
   },
 }
 ```

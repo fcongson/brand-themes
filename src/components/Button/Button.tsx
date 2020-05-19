@@ -6,6 +6,7 @@ const PrimaryButton = styled.button`
     if (!theme) return
     const primary = theme?.button?.primary
     return `
+      // defaults using tokens
       background-color: ${primary?.backgroundColor};
       height: ${primary?.height};
       width: ${primary?.width};
@@ -17,13 +18,9 @@ const PrimaryButton = styled.button`
       font-weight: ${primary?.fontWeight};
       text-transform: ${primary?.textTransform};
       cursor: ${primary?.cursor};
-      &:hover {
-        ${primary?.hover}
-      }
-      &:active {
-        ${primary?.active}
-      }
-      transition: ${primary?.transition};
+
+      // css
+      ${primary?.override}
     `
   }}
 `
@@ -33,6 +30,7 @@ const SecondaryButton = styled.button`
     if (!theme) return
     const secondary = theme?.button?.secondary
     return `
+      // defaults using tokens
       background-color: ${secondary?.backgroundColor};
       height: ${secondary?.height};
       width: ${secondary?.width};
@@ -44,13 +42,9 @@ const SecondaryButton = styled.button`
       font-weight: ${secondary?.fontWeight};
       text-transform: ${secondary?.textTransform};
       cursor: ${secondary?.cursor};
-      &:hover {
-        ${secondary?.hover}
-      }
-      &:active {
-        ${secondary?.active}
-      }
-      transition: ${secondary?.transition};
+
+      // css
+      ${secondary?.override}
     `
   }}
 `

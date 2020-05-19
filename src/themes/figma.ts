@@ -25,13 +25,15 @@ const button = {
     fontSize: '16px',
     fontWeight: 700,
     cursor: 'pointer',
-    hover: `
-      transform: translateY(-2px);
+    override: `
+      &:hover {
+        transform: translateY(-2px);
+      }
+      &:active {
+        transform: translateY(1px);
+      }
+      transition: transform 200ms,background 200ms;
     `,
-    active: `
-      transform: translateY(1px);
-    `,
-    transition: 'transform 200ms,background 200ms',
   },
   secondary: {
     backgroundColor: color.secondary,
@@ -44,13 +46,15 @@ const button = {
     fontSize: '16px',
     fontWeight: 700,
     cursor: 'pointer',
-    hover: `
-      transform: translateY(-2px);
+    override: `
+      &:hover {
+        transform: translateY(-2px);
+      }
+      &:active {
+        transform: translateY(1px);
+      }
+      transition: transform 200ms,background 200ms;
     `,
-    active: `
-      transform: translateY(1px);
-    `,
-    transition: 'transform 200ms,background 200ms',
   },
 }
 

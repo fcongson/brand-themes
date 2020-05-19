@@ -53,9 +53,6 @@ exports[`Button Renders figma primary 1`] = `
     Object {
       "button": Object {
         "primary": Object {
-          "active": "
-      transform: translateY(1px);
-    ",
           "backgroundColor": "#000000",
           "border": "3px solid #000000",
           "borderRadius": "8px",
@@ -65,16 +62,18 @@ exports[`Button Renders figma primary 1`] = `
           "fontSize": "16px",
           "fontWeight": 700,
           "height": "42px",
-          "hover": "
-      transform: translateY(-2px);
+          "override": "
+      &:hover {
+        transform: translateY(-2px);
+      }
+      &:active {
+        transform: translateY(1px);
+      }
+      transition: transform 200ms,background 200ms;
     ",
-          "transition": "transform 200ms,background 200ms",
           "width": "302px",
         },
         "secondary": Object {
-          "active": "
-      transform: translateY(1px);
-    ",
           "backgroundColor": "#ffffff",
           "border": "3px solid #000000",
           "borderRadius": "8px",
@@ -84,10 +83,15 @@ exports[`Button Renders figma primary 1`] = `
           "fontSize": "16px",
           "fontWeight": 700,
           "height": "42px",
-          "hover": "
-      transform: translateY(-2px);
+          "override": "
+      &:hover {
+        transform: translateY(-2px);
+      }
+      &:active {
+        transform: translateY(1px);
+      }
+      transition: transform 200ms,background 200ms;
     ",
-          "transition": "transform 200ms,background 200ms",
           "width": "302px",
         },
       },
@@ -137,14 +141,22 @@ exports[`Button Renders spotify primary 1`] = `
       transform: scale(1.04);
       background-color: #1ed760;
     ",
+          "override": "
+      &:hover {
+        transform: scale(1.04);
+        background-color: #1ed760;
+      }
+      &:active {
+        transform: scale(1);
+        background-color: #14833b;
+      }
+      transition: all 33ms;
+    ",
           "textTransform": "uppercase",
           "transition": "all 33ms",
           "width": "214px",
         },
         "secondary": Object {
-          "active": "
-      transform: scale(1);
-    ",
           "backgroundColor": "transparent",
           "border": "2px solid #000000",
           "borderRadius": "500px",
@@ -154,11 +166,16 @@ exports[`Button Renders spotify primary 1`] = `
           "fontSize": "14px",
           "fontWeight": 700,
           "height": "48px",
-          "hover": "
-      transform: scale(1.04);
+          "override": "
+      &:hover {
+        transform: scale(1.04);
+      }
+      &:active {
+        transform: scale(1);
+      }
+      transition: all 33ms;
     ",
           "textTransform": "uppercase",
-          "transition": "all 33ms",
           "width": "214px",
         },
       },
@@ -196,14 +213,22 @@ exports[`Button Renders spotify secondary 1`] = `
       transform: scale(1.04);
       background-color: #1ed760;
     ",
+          "override": "
+      &:hover {
+        transform: scale(1.04);
+        background-color: #1ed760;
+      }
+      &:active {
+        transform: scale(1);
+        background-color: #14833b;
+      }
+      transition: all 33ms;
+    ",
           "textTransform": "uppercase",
           "transition": "all 33ms",
           "width": "214px",
         },
         "secondary": Object {
-          "active": "
-      transform: scale(1);
-    ",
           "backgroundColor": "transparent",
           "border": "2px solid #000000",
           "borderRadius": "500px",
@@ -213,11 +238,16 @@ exports[`Button Renders spotify secondary 1`] = `
           "fontSize": "14px",
           "fontWeight": 700,
           "height": "48px",
-          "hover": "
-      transform: scale(1.04);
+          "override": "
+      &:hover {
+        transform: scale(1.04);
+      }
+      &:active {
+        transform: scale(1);
+      }
+      transition: all 33ms;
     ",
           "textTransform": "uppercase",
-          "transition": "all 33ms",
           "width": "214px",
         },
       },
