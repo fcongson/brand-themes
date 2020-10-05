@@ -1,51 +1,46 @@
 # brand-themes
 
-Brand themes for [styled components](https://styled-components.com/docs/advanced#theming).
+Brand themes for [styled components](https://styled-components.com/docs/advanced#theming) using [styled system](https://styled-system.com/).
 
 ## Concept
 
-This project is a proof of concept for building a set of themable reusable React Components allowing for support of different brand designs.
+This project is a proof of concept for building a set of themeable reusable React Components allowing for support of different brand designs.
+
+View the [Storybook](https://brand-themes.netlify.app/?path=/docs/button--default).
 
 ## Components
 
-The component provides sensible defaults that can be overriden based on design tokens while also allowing an `override` property to supply any css to the component.
+The component provides sensible defaults that can be overridden based on theme objects that follow the [System System](https://styled-system.com/) [Theme Specification](https://styled-system.com/theme-specification).
 
 Button Component
 
 ```js
-const PrimaryButton = styled.button`
-  ${({ theme }) => {
-    if (!theme) return
-    const primary = theme?.button?.primary
-    return `
-      // defaults using tokens
-      background-color: ${primary?.backgroundColor};
-      height: ${primary?.height};
-      width: ${primary?.width};
-      border-radius: ${primary?.borderRadius};
-      border: ${primary?.border};
-      color: ${primary?.color};
-      font-family: ${primary?.fontFamily ?? 'sans-serif'};
-      font-size: ${primary?.fontSize};
-      font-weight: ${primary?.fontWeight};
-      text-transform: ${primary?.textTransform};
-      cursor: ${primary?.cursor};
-
-      // css
-      ${primary?.override}
-    `
-  }}
-`
+const Button =
+  styled.button <
+  ButtonStyleProps >
+  variant({
+    scale: 'buttons',
+    variants: {
+      primary: {
+        color: 'white',
+        bg: 'primary',
+      },
+      secondary: {
+        color: 'white',
+        bg: 'secondary',
+      },
+    },
+  })
 ```
 
 ## Themes
 
-The theme can provide a value to each token and css to the `override` property.
+The theme objects follow the [System System](https://styled-system.com/) [Theme Specification](https://styled-system.com/theme-specification).
 
 Brand Theme
 
 ```js
-const button = {
+const buttons = {
   primary: {
     backgroundColor: color.primary,
     height: '42px',
@@ -57,15 +52,13 @@ const button = {
     fontSize: '16px',
     fontWeight: 700,
     cursor: 'pointer',
-    override: `
-      &:hover {
-        transform: translateY(-2px);
-      }
-      &:active {
-        transform: translateY(1px);
-      }
-      transition: transform 200ms,background 200ms;
-    `,
+    '&:hover': {
+      transform: 'translateY(-2px)',
+    },
+    '&:active': {
+      transform: 'translateY(1px)',
+    },
+    transition: 'transform 200ms,background 200ms',
   },
 }
 ```
