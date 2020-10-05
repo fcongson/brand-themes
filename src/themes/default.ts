@@ -2,11 +2,11 @@ export default {
   buttons: {
     primary: {
       color: 'white',
-      bg: 'black',
+      backgroundColor: 'black',
     },
     secondary: {
       color: 'white',
-      bg: 'grey',
+      backgroundColor: 'grey',
     },
   },
 }

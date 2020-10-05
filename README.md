@@ -18,16 +18,6 @@ Button Component
 const Button = styled.button<ButtonStyleProps>(
   variant({
     scale: 'buttons',
-    variants: {
-      primary: {
-        color: 'white',
-        bg: 'primary',
-      },
-      secondary: {
-        color: 'white',
-        bg: 'secondary',
-      },
-    },
   })
 )
 ```
