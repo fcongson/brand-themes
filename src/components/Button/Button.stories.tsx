@@ -1,10 +1,10 @@
 import * as React from 'react'
-import Button from './Button'
 import { ThemeProvider } from 'styled-components'
-import theme from '../../themes/default'
 import airbnb from '../../themes/airbnb'
+import theme from '../../themes/default'
 import figma from '../../themes/figma'
 import spotify from '../../themes/spotify'
+import Button from './Button'
 
 export default {
   title: 'Button',
@@ -31,50 +31,50 @@ export const DefaultSecondary = () => {
   )
 }
 
-// export const AirbnbPrimary = () => {
-//   return (
-//     <ThemeProvider theme={airbnb}>
-//       <Button type='primary'>Airbnb primary</Button>
-//     </ThemeProvider>
-//   )
-// }
+export const AirbnbPrimary = () => {
+  return (
+    <ThemeProvider theme={airbnb}>
+      <Button variant='primary'>Airbnb primary</Button>
+    </ThemeProvider>
+  )
+}
 
-// export const AirbnbSecondary = () => {
-//   return (
-//     <ThemeProvider theme={airbnb}>
-//       <Button type='secondary'>Airbnb secondary</Button>
-//     </ThemeProvider>
-//   )
-// }
+export const AirbnbSecondary = () => {
+  return (
+    <ThemeProvider theme={airbnb}>
+      <Button variant='secondary'>Airbnb secondary</Button>
+    </ThemeProvider>
+  )
+}
 
-// export const FigmaPrimary = () => {
-//   return (
-//     <ThemeProvider theme={figma}>
-//       <Button type='primary'>Figma primary</Button>
-//     </ThemeProvider>
-//   )
-// }
+export const FigmaPrimary = () => {
+  return (
+    <ThemeProvider theme={figma}>
+      <Button variant='primary'>Figma primary</Button>
+    </ThemeProvider>
+  )
+}
 
-// export const FigmaSecondary = () => {
-//   return (
-//     <ThemeProvider theme={figma}>
-//       <Button type='secondary'>Figma secondary</Button>
-//     </ThemeProvider>
-//   )
-// }
+export const FigmaSecondary = () => {
+  return (
+    <ThemeProvider theme={figma}>
+      <Button variant='secondary'>Figma secondary</Button>
+    </ThemeProvider>
+  )
+}
 
-// export const SpotifyPrimary = () => {
-//   return (
-//     <ThemeProvider theme={spotify}>
-//       <Button type='primary'>Spotify primary</Button>
-//     </ThemeProvider>
-//   )
-// }
+export const SpotifyPrimary = () => {
+  return (
+    <ThemeProvider theme={spotify}>
+      <Button variant='primary'>Spotify primary</Button>
+    </ThemeProvider>
+  )
+}
 
-// export const SpotifySecondary = () => {
-//   return (
-//     <ThemeProvider theme={spotify}>
-//       <Button type='secondary'>Spotify secondary</Button>
-//     </ThemeProvider>
-//   )
-// }
+export const SpotifySecondary = () => {
+  return (
+    <ThemeProvider theme={spotify}>
+      <Button variant='secondary'>Spotify secondary</Button>
+    </ThemeProvider>
+  )
+}

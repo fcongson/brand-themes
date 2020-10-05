@@ -13,7 +13,7 @@ const color = {
   black: '#000000',
 }
 
-const button = {
+const buttons = {
   primary: {
     backgroundColor: color.primary,
     height: '42px',
@@ -59,7 +59,7 @@ const button = {
 }
 
 const theme = {
-  button,
+  buttons,
 }
 
 export default theme

@@ -12,7 +12,7 @@ const color = {
   white: '#ffffff',
 }
 
-const button = {
+const buttons = {
   primary: {
     backgroundColor: color.primary,
     height: '44px',
@@ -23,7 +23,7 @@ const button = {
     fontFamily: 'Montserrat',
     fontSize: '12px',
     fontWeight: 700,
-    cursor: 'pointer'
+    cursor: 'pointer',
   },
   secondary: {
     backgroundColor: color.secondary,
@@ -35,12 +35,12 @@ const button = {
     fontFamily: 'Montserrat',
     fontSize: '12px',
     fontWeight: 700,
-    cursor: 'pointer'
+    cursor: 'pointer',
   },
 }
 
 const theme = {
-  button,
+  buttons,
 }
 
 export default theme
