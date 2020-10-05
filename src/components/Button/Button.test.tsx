@@ -12,17 +12,17 @@ describe('Button', () => {
     expect(button).toMatchSnapshot()
   })
   it('Renders primary', () => {
-    const button = shallow(<Button type='primary'>Text</Button>)
+    const button = shallow(<Button variant='primary'>Text</Button>)
     expect(button).toMatchSnapshot()
   })
   it('Renders secondary', () => {
-    const button = shallow(<Button type='secondary'>Text</Button>)
+    const button = shallow(<Button variant='secondary'>Text</Button>)
     expect(button).toMatchSnapshot()
   })
   it('Renders airbnb primary', () => {
     const button = shallow(
       <ThemeProvider theme={airbnb}>
-        <Button type='primary'>Text</Button>
+        <Button variant='primary'>Text</Button>
       </ThemeProvider>
     )
     expect(button).toMatchSnapshot()
@@ -30,14 +30,14 @@ describe('Button', () => {
   it('Renders airbnb secondary', () => {
     const button = shallow(
       <ThemeProvider theme={airbnb}>
-        <Button type='secondary'>Text</Button>
+        <Button variant='secondary'>Text</Button>
       </ThemeProvider>
     )
   })
   it('Renders figma primary', () => {
     const button = shallow(
       <ThemeProvider theme={figma}>
-        <Button type='primary'>Text</Button>
+        <Button variant='primary'>Text</Button>
       </ThemeProvider>
     )
     expect(button).toMatchSnapshot()
@@ -45,14 +45,14 @@ describe('Button', () => {
   it('Renders figma secondary', () => {
     const button = shallow(
       <ThemeProvider theme={figma}>
-        <Button type='secondary'>Text</Button>
+        <Button variant='secondary'>Text</Button>
       </ThemeProvider>
     )
   })
   it('Renders spotify primary', () => {
     const button = shallow(
       <ThemeProvider theme={spotify}>
-        <Button type='primary'>Text</Button>
+        <Button variant='primary'>Text</Button>
       </ThemeProvider>
     )
     expect(button).toMatchSnapshot()
@@ -60,7 +60,7 @@ describe('Button', () => {
   it('Renders spotify secondary', () => {
     const button = shallow(
       <ThemeProvider theme={spotify}>
-        <Button type='secondary'>Text</Button>
+        <Button variant='secondary'>Text</Button>
       </ThemeProvider>
     )
     expect(button).toMatchSnapshot()
