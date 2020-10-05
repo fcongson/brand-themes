@@ -14,10 +14,8 @@ The component provides sensible defaults that can be overridden based on theme o
 
 Button Component
 
-```js
-const Button =
-  styled.button <
-  ButtonStyleProps >
+```
+const Button = styled.button<ButtonStyleProps>(
   variant({
     scale: 'buttons',
     variants: {
@@ -31,6 +29,7 @@ const Button =
       },
     },
   })
+)
 ```
 
 ## Themes
@@ -39,7 +38,7 @@ The theme objects follow the [System System](https://styled-system.com/) [Theme 
 
 Brand Theme
 
-```js
+```
 const buttons = {
   primary: {
     backgroundColor: color.primary,
