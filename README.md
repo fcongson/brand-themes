@@ -10,7 +10,7 @@ View the [Storybook](https://brand-themes.netlify.app/?path=/docs/button--defaul
 
 ## Components
 
-The component provides sensible defaults that can be overridden based on theme objects that follow the [System System](https://styled-system.com/) [Theme Specification](https://styled-system.com/theme-specification).
+The component provides sensible defaults that can be overridden based on theme objects that follow the [Styled System](https://styled-system.com/) [Theme Specification](https://styled-system.com/theme-specification).
 
 Button Component
 
@@ -24,7 +24,7 @@ const Button = styled.button<ButtonStyleProps>(
 
 ## Themes
 
-The theme objects follow the [System System](https://styled-system.com/) [Theme Specification](https://styled-system.com/theme-specification).
+The theme objects follow the [Styled System](https://styled-system.com/) [Theme Specification](https://styled-system.com/theme-specification).
 
 Brand Theme
 
