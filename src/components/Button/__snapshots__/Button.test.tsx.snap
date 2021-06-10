@@ -2,7 +2,7 @@
 
 exports[`Button Renders 1`] = `
 <button
-  className="sc-bdnylx"
+  className="sc-bdnxRM"
 >
   Text
 </button>
@@ -106,7 +106,7 @@ exports[`Button Renders figma primary 1`] = `
 
 exports[`Button Renders primary 1`] = `
 <button
-  className="sc-bdnylx"
+  className="sc-bdnxRM"
 >
   Text
 </button>
@@ -114,7 +114,7 @@ exports[`Button Renders primary 1`] = `
 
 exports[`Button Renders secondary 1`] = `
 <button
-  className="sc-bdnylx"
+  className="sc-bdnxRM"
 >
   Text
 </button>
