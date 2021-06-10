@@ -1,5 +1,4 @@
 import { shallow } from 'enzyme'
-import * as React from 'react'
 import { ThemeProvider } from 'styled-components'
 import airbnb from '../../themes/airbnb'
 import figma from '../../themes/figma'

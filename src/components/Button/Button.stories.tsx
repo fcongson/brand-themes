@@ -1,4 +1,3 @@
-import * as React from 'react'
 import { ThemeProvider } from 'styled-components'
 import airbnb from '../../themes/airbnb'
 import theme from '../../themes/default'
