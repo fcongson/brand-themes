@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Button Renders 1`] = `
-<button
-  className="sc-bdnxRM"
+<styled.button
+  variant="secondary"
 >
   Text
-</button>
+</styled.button>
 `;
 
 exports[`Button Renders airbnb primary 1`] = `
@@ -41,11 +41,11 @@ exports[`Button Renders airbnb primary 1`] = `
     }
   }
 >
-  <styled.button
-    variant="primary"
+  <Button
+    primary={true}
   >
     Text
-  </styled.button>
+  </Button>
 </ContextProvider>
 `;
 
@@ -96,28 +96,28 @@ exports[`Button Renders figma primary 1`] = `
     }
   }
 >
-  <styled.button
-    variant="primary"
+  <Button
+    primary={true}
   >
     Text
-  </styled.button>
+  </Button>
 </ContextProvider>
 `;
 
 exports[`Button Renders primary 1`] = `
-<button
-  className="sc-bdnxRM"
+<styled.button
+  variant="primary"
 >
   Text
-</button>
+</styled.button>
 `;
 
 exports[`Button Renders secondary 1`] = `
-<button
-  className="sc-bdnxRM"
+<styled.button
+  variant="secondary"
 >
   Text
-</button>
+</styled.button>
 `;
 
 exports[`Button Renders spotify primary 1`] = `
@@ -171,11 +171,11 @@ exports[`Button Renders spotify primary 1`] = `
     }
   }
 >
-  <styled.button
-    variant="primary"
+  <Button
+    primary={true}
   >
     Text
-  </styled.button>
+  </Button>
 </ContextProvider>
 `;
 
@@ -230,10 +230,8 @@ exports[`Button Renders spotify secondary 1`] = `
     }
   }
 >
-  <styled.button
-    variant="secondary"
-  >
+  <Button>
     Text
-  </styled.button>
+  </Button>
 </ContextProvider>
 `;

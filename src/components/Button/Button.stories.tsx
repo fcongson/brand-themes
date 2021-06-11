@@ -3,7 +3,7 @@ import airbnb from '../../themes/airbnb'
 import theme from '../../themes/default'
 import figma from '../../themes/figma'
 import spotify from '../../themes/spotify'
-import Button from './Button'
+import { Button } from './Button'
 
 export default {
   title: 'Button',
@@ -17,7 +17,7 @@ export const Default = () => {
 export const DefaultPrimary = () => {
   return (
     <ThemeProvider theme={theme}>
-      <Button variant='primary'>Default primary</Button>
+      <Button primary>Default primary</Button>
     </ThemeProvider>
   )
 }
@@ -25,7 +25,7 @@ export const DefaultPrimary = () => {
 export const DefaultSecondary = () => {
   return (
     <ThemeProvider theme={theme}>
-      <Button variant='secondary'>Default secondary</Button>
+      <Button>Default secondary</Button>
     </ThemeProvider>
   )
 }
@@ -33,7 +33,7 @@ export const DefaultSecondary = () => {
 export const AirbnbPrimary = () => {
   return (
     <ThemeProvider theme={airbnb}>
-      <Button variant='primary'>Airbnb primary</Button>
+      <Button primary>Airbnb primary</Button>
     </ThemeProvider>
   )
 }
@@ -41,7 +41,7 @@ export const AirbnbPrimary = () => {
 export const AirbnbSecondary = () => {
   return (
     <ThemeProvider theme={airbnb}>
-      <Button variant='secondary'>Airbnb secondary</Button>
+      <Button>Airbnb secondary</Button>
     </ThemeProvider>
   )
 }
@@ -49,7 +49,7 @@ export const AirbnbSecondary = () => {
 export const FigmaPrimary = () => {
   return (
     <ThemeProvider theme={figma}>
-      <Button variant='primary'>Figma primary</Button>
+      <Button primary>Figma primary</Button>
     </ThemeProvider>
   )
 }
@@ -57,7 +57,7 @@ export const FigmaPrimary = () => {
 export const FigmaSecondary = () => {
   return (
     <ThemeProvider theme={figma}>
-      <Button variant='secondary'>Figma secondary</Button>
+      <Button>Figma secondary</Button>
     </ThemeProvider>
   )
 }
@@ -65,7 +65,7 @@ export const FigmaSecondary = () => {
 export const SpotifyPrimary = () => {
   return (
     <ThemeProvider theme={spotify}>
-      <Button variant='primary'>Spotify primary</Button>
+      <Button primary>Spotify primary</Button>
     </ThemeProvider>
   )
 }
@@ -73,7 +73,7 @@ export const SpotifyPrimary = () => {
 export const SpotifySecondary = () => {
   return (
     <ThemeProvider theme={spotify}>
-      <Button variant='secondary'>Spotify secondary</Button>
+      <Button>Spotify secondary</Button>
     </ThemeProvider>
   )
 }

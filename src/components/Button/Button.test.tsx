@@ -3,12 +3,11 @@
  */
 
 import { shallow } from 'enzyme'
-import React from 'react'
 import { ThemeProvider } from 'styled-components'
 import airbnb from '../../themes/airbnb'
 import figma from '../../themes/figma'
 import spotify from '../../themes/spotify'
-import Button from './Button'
+import { Button } from './Button'
 
 describe('Button', () => {
   it('Renders', () => {
@@ -16,17 +15,17 @@ describe('Button', () => {
     expect(button).toMatchSnapshot()
   })
   it('Renders primary', () => {
-    const button = shallow(<Button variant='primary'>Text</Button>)
+    const button = shallow(<Button primary>Text</Button>)
     expect(button).toMatchSnapshot()
   })
   it('Renders secondary', () => {
-    const button = shallow(<Button variant='secondary'>Text</Button>)
+    const button = shallow(<Button>Text</Button>)
     expect(button).toMatchSnapshot()
   })
   it('Renders airbnb primary', () => {
     const button = shallow(
       <ThemeProvider theme={airbnb}>
-        <Button variant='primary'>Text</Button>
+        <Button primary>Text</Button>
       </ThemeProvider>
     )
     expect(button).toMatchSnapshot()
@@ -34,14 +33,14 @@ describe('Button', () => {
   it('Renders airbnb secondary', () => {
     const button = shallow(
       <ThemeProvider theme={airbnb}>
-        <Button variant='secondary'>Text</Button>
+        <Button>Text</Button>
       </ThemeProvider>
     )
   })
   it('Renders figma primary', () => {
     const button = shallow(
       <ThemeProvider theme={figma}>
-        <Button variant='primary'>Text</Button>
+        <Button primary>Text</Button>
       </ThemeProvider>
     )
     expect(button).toMatchSnapshot()
@@ -49,14 +48,14 @@ describe('Button', () => {
   it('Renders figma secondary', () => {
     const button = shallow(
       <ThemeProvider theme={figma}>
-        <Button variant='secondary'>Text</Button>
+        <Button>Text</Button>
       </ThemeProvider>
     )
   })
   it('Renders spotify primary', () => {
     const button = shallow(
       <ThemeProvider theme={spotify}>
-        <Button variant='primary'>Text</Button>
+        <Button primary>Text</Button>
       </ThemeProvider>
     )
     expect(button).toMatchSnapshot()
@@ -64,7 +63,7 @@ describe('Button', () => {
   it('Renders spotify secondary', () => {
     const button = shallow(
       <ThemeProvider theme={spotify}>
-        <Button variant='secondary'>Text</Button>
+        <Button>Text</Button>
       </ThemeProvider>
     )
     expect(button).toMatchSnapshot()
