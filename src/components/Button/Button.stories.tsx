@@ -1,6 +1,5 @@
 import { ThemeProvider } from 'styled-components'
 import airbnb from '../../themes/airbnb'
-import theme from '../../themes/default'
 import figma from '../../themes/figma'
 import spotify from '../../themes/spotify'
 import { Button } from './Button'
@@ -8,26 +7,6 @@ import { Button } from './Button'
 export default {
   title: 'Button',
   component: Button,
-}
-
-export const Default = () => {
-  return <Button>Default</Button>
-}
-
-export const DefaultPrimary = () => {
-  return (
-    <ThemeProvider theme={theme}>
-      <Button primary>Default primary</Button>
-    </ThemeProvider>
-  )
-}
-
-export const DefaultSecondary = () => {
-  return (
-    <ThemeProvider theme={theme}>
-      <Button>Default secondary</Button>
-    </ThemeProvider>
-  )
 }
 
 export const AirbnbPrimary = () => {
